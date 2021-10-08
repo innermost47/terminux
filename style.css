@@ -1,0 +1,371 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  user-select: none;
+  max-height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 12px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  padding-bottom: 50px;
+}
+
+.background {
+  background: url(assets/ubuntu.jpg) no-repeat center;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.board {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, calc(100% / 7));
+  grid-template-rows: repeat(7, calc(100% / 7));
+  margin: auto;
+}
+
+.you,
+.root,
+.home,
+.opt,
+.etc,
+.tmp,
+.mnt,
+.share,
+.sys,
+.file1,
+.file2,
+.file3,
+.wilder,
+.file4,
+.file5,
+.wilderGameJs {
+  font-weight: bold;
+  grid-column: 4;
+  grid-row: 7;
+  position: relative;
+}
+
+.home,
+.opt,
+.etc,
+.tmp,
+.mnt,
+.share,
+.sys,
+.wilder {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.opt {
+  grid-column: 2;
+}
+
+.etc {
+  grid-column: 3;
+}
+
+.tmp {
+  grid-column: 4;
+}
+
+.mnt {
+  grid-column: 5;
+}
+
+.share {
+  grid-column: 6;
+}
+
+.sys {
+  grid-column: 7;
+}
+
+.file1 {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.file2 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.file3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.file5 {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.wilder {
+  grid-row: 2;
+}
+
+/* FILES IN TMP */
+
+.file4,
+.wilderGameJs {
+  grid-column: 4;
+}
+
+.file4 {
+  grid-row: 5;
+}
+
+.wilderGameJs {
+  grid-row: 4;
+}
+
+.img {
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-file {
+  width: 40px;
+}
+
+.tux {
+  z-index: 3;
+}
+
+.house {
+  width: 110px;
+}
+
+.folders_name,
+.file_name {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.newPaddingBottom {
+  bottom: -15px;
+}
+
+.file_name {
+  text-transform: lowercase;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hiddenTmp,
+.fileTxt {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+.start {
+  grid-column: 1;
+  grid-row: 7;
+  position: relative;
+  margin: auto;
+}
+
+.button {
+  background-color: #be5f7c;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #721330;
+}
+
+.points {
+  grid-column: 1/5;
+  grid-row: 1;
+  z-index: 10;
+  margin: 10px 10px;
+}
+
+.welcome,
+.points-number,
+.points-life {
+  color: #fff;
+  font-weight: bold;
+}
+
+#counter,
+#counter-life {
+  display: inline;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  background-color: #3b0932;
+  z-index: 15;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  transition: left 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
+.showForm {
+  left: 50%;
+}
+
+.cross {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.imgDialog {
+  text-align: center;
+}
+
+.imgDialog-img {
+  width: 50px;
+}
+
+#imgDialog {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.form-question {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.alarm {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.form-form {
+  margin: 20px auto;
+  width: 80%;
+  visibility: visible;
+}
+
+input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: inline;
+}
+
+label {
+  display: inline;
+  color: #fff;
+}
+
+.next,
+.retry,
+.restart {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  display: none;
+}
+
+.button {
+  border: none;
+}
+
+footer {
+  z-index: 10;
+  padding: 15px;
+  background-color: #3b0932;
+  color: #fff;
+  text-align: center;
+  border-top: 3px solid #851a87;
+}
+
+.whiteLink {
+  font-weight: bold;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .img {
+    width: 80px;
+  }
+  .img-file {
+    width: 40px;
+  }
+  body {
+    font-size: 18px;
+  }
+  .folders_name,
+  .file_name {
+    bottom: -5px;
+  }
+  .newPaddingBottom {
+    bottom: -15px;
+  }
+  .form {
+    width: 50%;
+  }
+  input {
+    padding: 10px;
+  }
+}
+
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
