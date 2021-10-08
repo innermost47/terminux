@@ -97,7 +97,7 @@ const youWin = () => {
   nextButton.style.display = "none";
   formQuestion.innerHTML = "";
   alarm.innerHTML =
-    "Félicitation, tu as bien bossé tes commandes linux !<br>Si tu souhaites contribuer à ce projet, rdv sur <a href='https://github.com/innermost47/termux' target ='_blank' class='whiteLink'>github</a> !";
+    "Félicitation, tu as bien bossé tes commandes linux !<br>Si tu souhaites contribuer à ce projet, rdv sur <a href='https://github.com/innermost47/terminux' target ='_blank' class='whiteLink'>github</a> !";
   formBlock.classList.add("showForm");
 };
 
