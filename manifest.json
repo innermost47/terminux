@@ -15,37 +15,37 @@
       }
     ],
     "icons": [{
-        "src": "assets/icons/tux-48*48.png",
+        "src": "assets/icons/tux-48x48.png",
         "sizes": "48x48",
         "type": "image/png"
       }, {
-        "src": "assets/icons/tux-72*72.png",
+        "src": "assets/icons/tux-72x72.png",
         "sizes": "72x72",
         "type": "image/png"
       }, {
-        "src": "assets/icons/tux-96*96.png",
+        "src": "assets/icons/tux-96x96.png",
         "sizes": "96x96",
         "type": "image/png"
       }, {
-        "src": "assets/icons/tux-144*144.png",
+        "src": "assets/icons/tux-144x144.png",
         "sizes": "144x144",
         "type": "image/png"
       }, {
-        "src": "assets/icons/tux-168*168.png",
+        "src": "assets/icons/tux-168x168.png",
         "sizes": "168x168",
         "type": "image/png"
       }, {
-        "src": "assets/icons/tux-192*192.png",
+        "src": "assets/icons/tux-192x192.png",
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "any maskable"
       },{
-        "src": "assets/icons/tux-512*512.png",
+        "src": "assets/icons/tux-512x512.png",
         "sizes": "512x512",
         "type": "image/png"
       },
       {
-        "src": "assets/icons/tux-192*192.png",
+        "src": "assets/icons/tux-192x192.png",
         "sizes": "any",
         "type": "image/png"
       }
